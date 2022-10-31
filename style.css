@@ -75,6 +75,7 @@ display: flex;
 flex-direction: row-reverse;
 margin-top: 30px;
 }
+/* –––––––––––––––––––––––––– */
 .yoga-page div.img-left, 
 .yoga-page div.img-right {
 flex: 40%;
@@ -88,14 +89,43 @@ margin-left: 50px;
   flex: 60% ;
   margin-right: 40px;
 }
+/* –––––––––––––––––––––––––– */
+.streaming-right, .streaming-left {
+  display: flex;
+  width: 5%;
+  height: 5%;
+}
+.streaming-right { margin-left: 100px;}
+.streaming-left { margin-left: -10px; }
+.movie-page div.img-left {
+  flex: 30%;
+  margin-left: 50px;
+}
+.movie-page div.img-right {
+  flex: 50%;
+  margin-right: 50px;
+  margin-left: 40px;
+}
+.movie-page  div.para-left { 
+  flex: 60% ;
+  margin-left: 50px;
+}
+.movie-page  div.para-right {
+  flex: 40% ;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+/* –––––––––––––––––––––––––– */
 .cafe-page div.img-left, 
 .cafe-page div.img-right{
 flex: 30%;
-padding: 0 80px
+padding: 0 40px
 }
 .cafe-page div.para-left,
 .cafe-page div.para-right { flex:40%; }
-
+.cafe-page div.para-right { margin-right: 50px;}
+.cafe-page div.para-left { margin-left: 50px;}
+/* –––––––––––––––––––––––––– */
 div.para-right, .para-left {
 font-family: 'Gopher';
 font-style: normal;
