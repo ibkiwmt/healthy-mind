@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+img {
+  width: 100%;
+}
 body {
   background: rgb(235,235,170);
   background: radial-gradient(circle, rgba(235,235,170,1) 0%, 
@@ -39,8 +42,7 @@ header.top-page{
 /* contents page starts below */
 body.contents {
   background: rgba(170,187,135,1);
-  width: 1440px;
-  height: 1024px;
+  width: 100vw;
 }
 section.back-to-top {
   font-family: 'FreightBig Pro';
@@ -78,9 +80,13 @@ section.two-col2 {
 div.img-left, .img-right{
   flex: 30%;
 }
-div.para-right,.para-left{
-  flex: 20%;
+.cafe-page div.img-left, .cafe-page div.img-right{
+  flex: 30%;
+  padding: 0 80px
 }
+.cafe-page div.para-left,
+.cafe-page div.para-right { flex:40%;}
+
 .para-right {
   margin-left: -30px;
 }
