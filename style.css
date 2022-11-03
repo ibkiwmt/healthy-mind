@@ -38,8 +38,12 @@ color: white;
 .animate__animated.animate__swing {
 --animate-duration: 3s;
 }
+/* mouse over link */
+a:hover {
+  color: rgb(88, 108, 48);
+}
 
-/* contents page starts below */
+/* contents page */
 body.contents {
 background: rgba(170,187,135,1);
 width: 100vw;
@@ -55,6 +59,9 @@ margin-top: 50px;
 section.back-to-top a {
 text-decoration: none;
 color: white;
+}
+section.back-to-top a:hover {
+  color: rgb(88, 108, 48);
 }
 header.cont-name {
 font-family: 'Nagita';
@@ -75,7 +82,7 @@ display: flex;
 flex-direction: row-reverse;
 margin-top: 30px;
 }
-/* –––––––––––––––––––––––––– */
+/* yoga page */
 .yoga-page div.img-left, 
 .yoga-page div.img-right {
 flex: 40%;
@@ -84,19 +91,21 @@ margin-left: 50px;
 .yoga-page div.para-left { 
   flex: 60% ;
   margin-left: 50px;
+  margin-right: 50px;
 }
 .yoga-page div.para-right {
   flex: 60% ;
   margin-right: 40px;
+  margin-left: 50px;
 }
-/* –––––––––––––––––––––––––– */
+/* movie page */
 .streaming-right, .streaming-left {
   display: flex;
   width: 5%;
   height: 5%;
 }
-.streaming-right { margin-left: 100px;}
-.streaming-left { margin-left: -10px; }
+div.streaming-right { margin-left: 700px;}
+div.streaming-left { margin-left: 50px; }
 .movie-page div.img-left {
   flex: 30%;
   margin-left: 50px;
@@ -115,17 +124,29 @@ margin-left: 50px;
   margin-right: 40px;
   margin-left: 40px;
 }
-/* –––––––––––––––––––––––––– */
+/* cafe page */
 .cafe-page div.img-left, 
 .cafe-page div.img-right{
 flex: 30%;
-padding: 0 40px
+padding: 0 80px
 }
 .cafe-page div.para-left,
 .cafe-page div.para-right { flex:40%; }
 .cafe-page div.para-right { margin-right: 50px;}
 .cafe-page div.para-left { margin-left: 50px;}
-/* –––––––––––––––––––––––––– */
+/* baking page */
+.baking-page div.img-left, 
+.baking-page div.img-right{
+flex: 25%;
+padding: 0 60px
+}
+.baking-page div.para-left,
+.baking-page div.para-right { 
+flex: 40%; 
+padding: 0 50px
+}
+.baking-page div.para-left { margin-left: 50px;}
+/* contents done */
 div.para-right, .para-left {
 font-family: 'Gopher';
 font-style: normal;
@@ -137,7 +158,6 @@ color: rgb(38, 34, 34);
 main h1, h2 {
 font-family: 'FreightBig Pro';
 font-style: normal;
-font-weight: 300;
 font-size: 30px;
 color: #FFFFFF;
 }
@@ -150,20 +170,24 @@ margin-left: 50px;
 margin-top: 80px;
 }
 footer {
-width: 200px;
-top: 1720px;
 font-family: 'Gopher';
 font-style: normal;
-font-weight: 400;
 font-size: 20px;
+}
+footer .box {
+width: 300px; 
+text-align: center;
 display: flex;
 flex-direction: row;
-justify-content: space-around;
-margin-left: 800px;
-margin-top: 40px;
+justify-content: space-evenly;
+margin-left: 40%
+}
+footer div {
+padding-left: 40px;
+padding-top: 80px;
+padding-bottom: 20px;
 }
 footer div a {
 text-decoration: none;
 color: #FFFFFF;
 }
-/* movie icons */
